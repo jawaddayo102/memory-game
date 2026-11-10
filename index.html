@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Memory Game</h1>
+    <p class="subtitle">Flip two cards. Find all 8 matching pairs in the fewest moves.</p>
+
+    <!-- Moves, time and best score -->
+    <div class="stats">
+      <div class="stat"><span>Moves</span><strong id="moves">0</strong></div>
+      <div class="stat"><span>Time</span><strong id="time">0s</strong></div>
+      <div class="stat"><span>Best</span><strong id="best">-</strong></div>
+    </div>
+
+    <!-- The 16 cards are created by script.js -->
+    <div id="board" class="board"></div>
+
+    <p id="winMessage" class="win-message" role="status" hidden></p>
+    <button id="restartBtn" class="btn" type="button">New Game</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
